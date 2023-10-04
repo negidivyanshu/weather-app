@@ -1,0 +1,18 @@
+    #searchBtn {
+        margin: auto 5px;
+    }
+
+    #unitSelect {
+        border-radius: 0.25rem;
+    }
+
+    .unit {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .input-group-text,
+    #unitSelect {
+        height: 30px;
+    }
