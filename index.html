@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Dashboard</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center mb-4">Weather Dashboard</h1>
-        <div class="row">
-            <!-- INPUT -->
-            <div class="col-md-8 m-auto">
-                <div class="input-group">
-                    <input type="text" id="cityInput" class="form-control" placeholder="Enter city name">
-                    <button id="searchBtn" class="btn btn-primary">Search</button>
-                   
-                </div>
-
-                <!-- UNIT -->
-                 <div class="input-group-append unit">
-                        <label class="input-group-text" for="unitSelect">Temperature Unit</label>
-                        <select id="unitSelect" class="form-select">
-                            <option value="metric">Celsius</option>
-                            <option value="imperial">Fahrenheit</option>
-                        </select>
-                    </div>
-                <div id="weatherInfo" class="mt-4">
-                    <!-- Weather data will be displayed here -->
-                </div>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">🌤️ Weather Dashboard</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="card shadow-lg p-4">
+          <!-- INPUT -->
+          <div class="input-group mb-3">
+            <input type="text" id="cityInput" placeholder="Enter city name" class="form-control">
+            <div class="input-group-append">
+              <button id="searchBtn" class="btn btn-primary px-4">Search</button>
             </div>
+          </div>
+
+          <!-- UNIT -->
+          <div class="input-group mb-4">
+            <label class="input-group-text" for="unitSelect">Temp Unit</label>
+            <select id="unitSelect" class="custom-select">
+              <option value="metric">Celsius</option>
+              <option value="imperial">Fahrenheit</option>
+            </select>
+          </div>
+
+          <!-- Weather Info -->
+          <div id="weatherInfo" class="weather-box p-4 rounded text-center">
+            <!-- Weather data will be displayed here -->
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd69sncxFg5fNqnSR0KOx7CXJkm0GUOyM&libraries=places"></script>
 </body>
 </html>

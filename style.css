@@ -1,18 +1,80 @@
-    #searchBtn {
-        margin: auto 5px;
-    }
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #87ceeb, #f8f9fa);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-    #unitSelect {
-        border-radius: 0.25rem;
-    }
+/* Weather card container */
+#weatherInfo .card {
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    text-align: start;
+    margin: 20px;
+}
 
-    .unit {
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 10px;
-    }
+/* Weather card title */
+#weatherInfo .card h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
 
-    .input-group-text,
-    #unitSelect {
-        height: 30px;
+/* Weather details list */
+#weatherInfo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#weatherInfo ul li {
+    padding: 8px 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+#weatherInfo ul li:last-child {
+    border-bottom: none;
+}
+
+/* Temperature styling */
+#weatherInfo .temperature {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff4500;
+    margin: 15px 0;
+}
+
+/* Button styling */
+#weatherInfo .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+#weatherInfo .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #weatherInfo .card {
+        width: 90%;
     }
+}
