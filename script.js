@@ -1,5 +1,8 @@
-const apiKey = 'c6d31ed65e9240918a865609230410';
+const apiKey = 'c5c4e662d4044fbcbb3133825253005';
 const weatherInfo = document.getElementById('weatherInfo');
+document.getElementById('searchBtn').addEventListener('click', performSearch);
+
+console.log("JS is running!");
 
 // Function to handle the search
 function performSearch() {
